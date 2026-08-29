@@ -1,0 +1,334 @@
+{
+  "description": "Project demo cases selected by the user; remove cases preserved from the previous selection.",
+  "clap_verified": false,
+  "clap_note": "Add, replace, and multiturn groups were replaced with user-selected cases on 2026-08-29; remove group was left unchanged. Add Demo 2 was removed on 2026-08-29.",
+  "methods": [
+    "agent",
+    "zeta",
+    "audioeditor",
+    "mmedit",
+    "sao-instruct"
+  ],
+  "cases": [
+    {
+      "case_id": "single_add_01_000001_add_017221",
+      "group": "single_add",
+      "dataset": "single_turn_1500",
+      "operation": "add",
+      "filename": "000001_add_017221.wav",
+      "source_prompt": "A man gives a sales pitch accompanied by a steady engine rumble.",
+      "target_prompt": "A man gives a sales pitch accompanied by a steady engine rumble, and fast immediate acceleration of multiple cars.",
+      "edit_instruction": "Add the target sound event while preserving the original scene.",
+      "selection_basis": "user-selected replacement demo case",
+      "audio": {
+        "before": "cases/single_add_01_000001_add_017221/before.wav",
+        "agent": "cases/single_add_01_000001_add_017221/agent.wav",
+        "zeta": "cases/single_add_01_000001_add_017221/zeta.wav",
+        "audioeditor": "cases/single_add_01_000001_add_017221/audioeditor.wav",
+        "mmedit": "cases/single_add_01_000001_add_017221/mmedit.wav",
+        "sao-instruct": "cases/single_add_01_000001_add_017221/sao-instruct.wav"
+      }
+    },
+    {
+      "case_id": "single_add_03_000016_add_back_028640",
+      "group": "single_add",
+      "dataset": "single_turn_1500",
+      "operation": "add",
+      "filename": "000016_add_back_028640.wav",
+      "source_prompt": "A cat lets out two loud, distressed screams in a quiet indoor room.",
+      "target_prompt": "A cat lets out two loud, distressed screams in a quiet indoor room, and water is being poured.",
+      "edit_instruction": "Add the target sound event while preserving the original scene.",
+      "selection_basis": "user-selected replacement demo case",
+      "audio": {
+        "before": "cases/single_add_03_000016_add_back_028640/before.wav",
+        "agent": "cases/single_add_03_000016_add_back_028640/agent.wav",
+        "zeta": "cases/single_add_03_000016_add_back_028640/zeta.wav",
+        "audioeditor": "cases/single_add_03_000016_add_back_028640/audioeditor.wav",
+        "mmedit": "cases/single_add_03_000016_add_back_028640/mmedit.wav",
+        "sao-instruct": "cases/single_add_03_000016_add_back_028640/sao-instruct.wav"
+      }
+    },
+    {
+      "case_id": "single_add_04_000018_add_fore4_013511",
+      "group": "single_add",
+      "dataset": "single_turn_1500",
+      "operation": "add",
+      "filename": "000018_add_fore4_013511.wav",
+      "source_prompt": "A man gives a speech to a large audience that applauds and cheers.",
+      "target_prompt": "A man gives a speech to a large audience that applauds and cheers, with bird chirps from a distance.",
+      "edit_instruction": "Add the target sound event while preserving the original scene.",
+      "selection_basis": "user-selected replacement demo case",
+      "audio": {
+        "before": "cases/single_add_04_000018_add_fore4_013511/before.wav",
+        "agent": "cases/single_add_04_000018_add_fore4_013511/agent.wav",
+        "zeta": "cases/single_add_04_000018_add_fore4_013511/zeta.wav",
+        "audioeditor": "cases/single_add_04_000018_add_fore4_013511/audioeditor.wav",
+        "mmedit": "cases/single_add_04_000018_add_fore4_013511/mmedit.wav",
+        "sao-instruct": "cases/single_add_04_000018_add_fore4_013511/sao-instruct.wav"
+      }
+    },
+    {
+      "case_id": "single_remove_04_001001_drop_back_001941",
+      "group": "single_remove",
+      "dataset": "single_turn_1500",
+      "operation": "remove",
+      "filename": "001001_drop_back_001941.wav",
+      "source_prompt": "A loud motorcycle engine roars past with a distinct echo in an urban setting.",
+      "target_prompt": "A distinct echo in an urban setting.",
+      "edit_instruction": "Remove the specified sound event while preserving the remaining audio.",
+      "selection_basis": "clear audible single-turn edit; pending per-item CLAP rerank",
+      "audio": {
+        "before": "cases/single_remove_04_001001_drop_back_001941/before.wav",
+        "agent": "cases/single_remove_04_001001_drop_back_001941/agent.wav",
+        "zeta": "cases/single_remove_04_001001_drop_back_001941/zeta.wav",
+        "audioeditor": "cases/single_remove_04_001001_drop_back_001941/audioeditor.wav",
+        "mmedit": "cases/single_remove_04_001001_drop_back_001941/mmedit.wav",
+        "sao-instruct": "cases/single_remove_04_001001_drop_back_001941/sao-instruct.wav"
+      }
+    },
+    {
+      "case_id": "single_remove_05_001029_drop1_034621",
+      "group": "single_remove",
+      "dataset": "single_turn_1500",
+      "operation": "remove",
+      "filename": "001029_drop1_034621.wav",
+      "source_prompt": "A man gives a formal speech about military action amidst background hissing.",
+      "target_prompt": "Background hissing.",
+      "edit_instruction": "Remove the specified sound event while preserving the remaining audio.",
+      "selection_basis": "clear audible single-turn edit; pending per-item CLAP rerank",
+      "audio": {
+        "before": "cases/single_remove_05_001029_drop1_034621/before.wav",
+        "agent": "cases/single_remove_05_001029_drop1_034621/agent.wav",
+        "zeta": "cases/single_remove_05_001029_drop1_034621/zeta.wav",
+        "audioeditor": "cases/single_remove_05_001029_drop1_034621/audioeditor.wav",
+        "mmedit": "cases/single_remove_05_001029_drop1_034621/mmedit.wav",
+        "sao-instruct": "cases/single_remove_05_001029_drop1_034621/sao-instruct.wav"
+      }
+    },
+    {
+      "case_id": "single_remove_06_001045_drop_back_044448",
+      "group": "single_remove",
+      "dataset": "single_turn_1500",
+      "operation": "remove",
+      "filename": "001045_drop_back_044448.wav",
+      "source_prompt": "An emergency vehicle siren approaches, followed by a tire screech and a loud collision.",
+      "target_prompt": "A tire screech and a loud collision.",
+      "edit_instruction": "Remove the specified sound event while preserving the remaining audio.",
+      "selection_basis": "clear audible single-turn edit; pending per-item CLAP rerank",
+      "audio": {
+        "before": "cases/single_remove_06_001045_drop_back_044448/before.wav",
+        "agent": "cases/single_remove_06_001045_drop_back_044448/agent.wav",
+        "zeta": "cases/single_remove_06_001045_drop_back_044448/zeta.wav",
+        "audioeditor": "cases/single_remove_06_001045_drop_back_044448/audioeditor.wav",
+        "mmedit": "cases/single_remove_06_001045_drop_back_044448/mmedit.wav",
+        "sao-instruct": "cases/single_remove_06_001045_drop_back_044448/sao-instruct.wav"
+      }
+    },
+    {
+      "case_id": "single_replace_01_002089_replace_064010",
+      "group": "single_replace",
+      "dataset": "single_turn_1500",
+      "operation": "replace",
+      "filename": "002089_replace_064010.wav",
+      "source_prompt": "Rushing water and bird calls are interrupted by a loud synthetic tone.",
+      "target_prompt": "Rushing water and high frequency sirens are interrupted by a loud synthetic tone.",
+      "edit_instruction": "Replace the specified source sound event with the target sound event while preserving the scene.",
+      "selection_basis": "user-selected replacement demo case",
+      "audio": {
+        "before": "cases/single_replace_01_002089_replace_064010/before.wav",
+        "agent": "cases/single_replace_01_002089_replace_064010/agent.wav",
+        "zeta": "cases/single_replace_01_002089_replace_064010/zeta.wav",
+        "audioeditor": "cases/single_replace_01_002089_replace_064010/audioeditor.wav",
+        "mmedit": "cases/single_replace_01_002089_replace_064010/mmedit.wav",
+        "sao-instruct": "cases/single_replace_01_002089_replace_064010/sao-instruct.wav"
+      }
+    },
+    {
+      "case_id": "single_replace_02_002090_replace_039589",
+      "group": "single_replace",
+      "dataset": "single_turn_1500",
+      "operation": "replace",
+      "filename": "002090_replace_039589.wav",
+      "source_prompt": "Metallic clinks are followed by silence and tire screeching.",
+      "target_prompt": "Baby sobbing is followed by silence and tire screeching.",
+      "edit_instruction": "Replace the specified source sound event with the target sound event while preserving the scene.",
+      "selection_basis": "user-selected replacement demo case",
+      "audio": {
+        "before": "cases/single_replace_02_002090_replace_039589/before.wav",
+        "agent": "cases/single_replace_02_002090_replace_039589/agent.wav",
+        "zeta": "cases/single_replace_02_002090_replace_039589/zeta.wav",
+        "audioeditor": "cases/single_replace_02_002090_replace_039589/audioeditor.wav",
+        "mmedit": "cases/single_replace_02_002090_replace_039589/mmedit.wav",
+        "sao-instruct": "cases/single_replace_02_002090_replace_039589/sao-instruct.wav"
+      }
+    },
+    {
+      "case_id": "single_replace_03_002569_audiocaps_replace_xzQ9Q4UKOjY_90000_100000",
+      "group": "single_replace",
+      "dataset": "single_turn_1500",
+      "operation": "replace",
+      "filename": "002569_audiocaps_replace_xzQ9Q4UKOjY_90000_100000.wav",
+      "source_prompt": "A baby is crying",
+      "target_prompt": "A baby is laughing",
+      "edit_instruction": "Replace the specified source sound event with the target sound event while preserving the scene.",
+      "selection_basis": "user-selected replacement demo case",
+      "audio": {
+        "before": "cases/single_replace_03_002569_audiocaps_replace_xzQ9Q4UKOjY_90000_100000/before.wav",
+        "agent": "cases/single_replace_03_002569_audiocaps_replace_xzQ9Q4UKOjY_90000_100000/agent.wav",
+        "zeta": "cases/single_replace_03_002569_audiocaps_replace_xzQ9Q4UKOjY_90000_100000/zeta.wav",
+        "audioeditor": "cases/single_replace_03_002569_audiocaps_replace_xzQ9Q4UKOjY_90000_100000/audioeditor.wav",
+        "mmedit": "cases/single_replace_03_002569_audiocaps_replace_xzQ9Q4UKOjY_90000_100000/mmedit.wav",
+        "sao-instruct": "cases/single_replace_03_002569_audiocaps_replace_xzQ9Q4UKOjY_90000_100000/sao-instruct.wav"
+      }
+    },
+    {
+      "dataset": "multiturn_200",
+      "operation": "multi_edit",
+      "combo_type": "add_replace",
+      "filename": "000002_agent_advantage_500_152_drop1_040525.wav",
+      "task_id": "agent_advantage_500_152_drop1_040525",
+      "source_prompt": "A synthesized emergency siren plays alongside a sequence of telephone keypad beeps.",
+      "target_prompt": "The scene contains radio announcer voice instead of electronic beep, keeps keyboard typing, and preserves the unrelated background sounds.",
+      "edit_instruction": "I want to add keyboard typing and replace the electronic beep with radio announcer voice.",
+      "steps": [
+        {
+          "instruction": "Add keyboard typing naturally without changing the existing events.",
+          "mode": "edit",
+          "negative_concepts": [],
+          "operation": "add",
+          "preserve_concepts": [
+            "all original source events"
+          ],
+          "source_concepts": [],
+          "source_prompt_before": "A synthesized emergency siren plays alongside a sequence of telephone keypad beeps.",
+          "step_id": 1,
+          "target_concepts": [
+            "keyboard typing"
+          ],
+          "target_prompt_after": "A synthesized emergency siren plays alongside a sequence of telephone keypad beeps. Additional keyboard typing is present and blends with the scene."
+        },
+        {
+          "instruction": "Replace the electronic beep with radio announcer voice while keeping keyboard typing.",
+          "mode": "edit",
+          "negative_concepts": [
+            "electronic beep"
+          ],
+          "operation": "replace",
+          "preserve_concepts": [
+            "keyboard typing",
+            "all unrelated background sounds"
+          ],
+          "source_concepts": [
+            "electronic beep"
+          ],
+          "source_prompt_before": "A synthesized emergency siren plays alongside a sequence of telephone keypad beeps. Additional keyboard typing is present and blends with the scene.",
+          "step_id": 2,
+          "target_concepts": [
+            "radio announcer voice"
+          ],
+          "target_prompt_after": "The scene contains radio announcer voice instead of electronic beep, keeps keyboard typing, and preserves the unrelated background sounds."
+        }
+      ],
+      "selection_basis": "user-selected multiturn demo case",
+      "case_id": "multiturn_01_000002_agent_advantage_500_152_drop1_040525",
+      "group": "multiturn",
+      "audio": {
+        "before": "cases/multiturn_01_000002_agent_advantage_500_152_drop1_040525/before.wav",
+        "agent": "cases/multiturn_01_000002_agent_advantage_500_152_drop1_040525/agent.wav",
+        "zeta": "cases/multiturn_01_000002_agent_advantage_500_152_drop1_040525/zeta.wav",
+        "audioeditor": "cases/multiturn_01_000002_agent_advantage_500_152_drop1_040525/audioeditor.wav",
+        "mmedit": "cases/multiturn_01_000002_agent_advantage_500_152_drop1_040525/mmedit.wav",
+        "sao-instruct": "cases/multiturn_01_000002_agent_advantage_500_152_drop1_040525/sao-instruct.wav"
+      }
+    },
+    {
+      "dataset": "multiturn_200",
+      "operation": "multi_edit",
+      "combo_type": "add_replace",
+      "filename": "agent_advantage_500_212_add_028246.wav",
+      "task_id": "agent_advantage_500_212_add_028246",
+      "source_prompt": "Wind blows as goats bleat, a man speaks, and a metal gate clanks shut.",
+      "target_prompt": "The scene contains radio announcer voice instead of speech, keeps keyboard typing, and preserves the unrelated background sounds.",
+      "edit_instruction": "I want to add keyboard typing and replace the sheep braying with radio announcer voice.",
+      "steps": [
+        {
+          "instruction": "Add keyboard typing naturally without changing the existing events.",
+          "mode": "edit",
+          "negative_concepts": [],
+          "operation": "add",
+          "preserve_concepts": [
+            "all original source events"
+          ],
+          "source_concepts": [],
+          "source_prompt_before": "Wind blows as goats bleat, a man speaks, and a metal gate clanks shut.",
+          "step_id": 1,
+          "target_concepts": [
+            "keyboard typing"
+          ],
+          "target_prompt_after": "Wind blows as goats bleat, a man speaks, and a metal gate clanks shut. Additional keyboard typing is present and blends with the scene."
+        },
+        {
+          "instruction": "Replace the speech with radio announcer voice while keeping keyboard typing.",
+          "mode": "edit",
+          "negative_concepts": [
+            "speech"
+          ],
+          "operation": "replace",
+          "preserve_concepts": [
+            "keyboard typing",
+            "all unrelated background sounds"
+          ],
+          "source_concepts": [
+            "speech"
+          ],
+          "source_prompt_before": "Wind blows as goats bleat, a man speaks, and a metal gate clanks shut. Additional keyboard typing is present and blends with the scene.",
+          "step_id": 2,
+          "target_concepts": [
+            "radio announcer voice"
+          ],
+          "target_prompt_after": "The scene contains radio announcer voice instead of speech, keeps keyboard typing, and preserves the unrelated background sounds."
+        }
+      ],
+      "selection_basis": "user-selected multiturn demo case",
+      "case_id": "multiturn_02_agent_advantage_500_212_add_028246",
+      "group": "multiturn",
+      "audio": {
+        "before": "cases/multiturn_02_agent_advantage_500_212_add_028246/before.wav",
+        "agent": "cases/multiturn_02_agent_advantage_500_212_add_028246/agent.wav",
+        "zeta": "cases/multiturn_02_agent_advantage_500_212_add_028246/zeta.wav",
+        "audioeditor": "cases/multiturn_02_agent_advantage_500_212_add_028246/audioeditor.wav",
+        "mmedit": "cases/multiturn_02_agent_advantage_500_212_add_028246/mmedit.wav",
+        "sao-instruct": "cases/multiturn_02_agent_advantage_500_212_add_028246/sao-instruct.wav"
+      }
+    },
+    {
+      "dataset": "manual_case",
+      "operation": "multi_edit",
+      "combo_type": "remove_replace",
+      "filename": "gunshot_dog_to_thunder.wav",
+      "task_id": "manual_gunshot_dog_to_thunder",
+      "source_prompt": "After a gunshot, there was a burst of dog barking",
+      "target_prompt": "After a thunder, there was a burst of",
+      "edit_instruction": "I want to remove the dog barking sounds and replace the gunshot with thunder.",
+      "steps": [
+        {
+          "instruction": "Remove the dog barking sounds."
+        },
+        {
+          "instruction": "Replace the gunshot with thunder."
+        }
+      ],
+      "selection_basis": "manual paper demo case with corrected agent target prompts",
+      "case_id": "multiturn_03_gunshot_dog_to_thunder",
+      "group": "multiturn",
+      "audio": {
+        "before": "cases/multiturn_03_gunshot_dog_to_thunder/before.wav",
+        "agent": "cases/multiturn_03_gunshot_dog_to_thunder/agent.wav",
+        "zeta": "cases/multiturn_03_gunshot_dog_to_thunder/zeta.wav",
+        "audioeditor": "cases/multiturn_03_gunshot_dog_to_thunder/audioeditor.wav",
+        "mmedit": "cases/multiturn_03_gunshot_dog_to_thunder/mmedit.wav",
+        "sao-instruct": "cases/multiturn_03_gunshot_dog_to_thunder/sao-instruct.wav"
+      }
+    }
+  ]
+}

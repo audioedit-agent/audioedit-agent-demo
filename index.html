@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AUDIOEDIT-AGENT Demo</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <h1>AUDIOEDIT-AGENT: A Collaborative Multi-Agent Framework for Instruction-Guided Audio Editing</h1>
+        <p class="venue">Research Demo</p>
+        <p class="authors">Anonymous Authors</p>
+        <p class="affiliations">Anonymous Institution</p>
+        <div class="paper-actions" aria-label="Paper resources">
+          <button class="paper-link primary" type="button" disabled>Paper</button>
+          <button class="paper-link" type="button" disabled>Code (coming soon)</button>
+          <a class="paper-link" href="#framework">Framework</a>
+          <a class="paper-link" href="#single-add">Demo</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="abstract">
+        <h2>Abstract</h2>
+        <p>
+          Existing audio editing methods provide different capabilities for operations such as audio addition,
+          removal and replacement, making a single editor insufficient for diverse and complex instructions. In
+          this paper, we propose AUDIOEDIT-AGENT, a collaborative multi-agent framework for instruction-guided
+          audio editing. AUDIOEDIT-AGENT decomposes a complex instruction into a sequence of editing operations
+          and selects an appropriate audio editing model for each operation. Instead of directly returning a
+          single model output, the framework generates multiple candidate audios and employs an audio critic to
+          evaluate the editing results. When an attempt does not satisfy the editing requirements, the critic
+          feedback is used to refine the prompt, model selection, or inference parameters for the next attempt.
+          This process coordinates different audio editing models within a unified framework and supports both
+          single-step and compound audio editing.
+        </p>
+      </section>
+
+      <section id="framework" class="framework">
+        <div class="section-heading-row">
+          <h2>Framework Overview</h2>
+        </div>
+        <figure>
+          <img src="assets/fig1.png" alt="AUDIOEDIT-AGENT framework overview" />
+        </figure>
+      </section>
+
+      <nav class="tabs" aria-label="Demo sections">
+        <button type="button" class="active" data-filter="all">Show All</button>
+        <button type="button" data-filter="single_add">Add Only</button>
+        <button type="button" data-filter="single_remove">Remove Only</button>
+        <button type="button" data-filter="single_replace">Replace Only</button>
+        <button type="button" data-filter="multiturn">Multi-turn</button>
+      </nav>
+
+      <section id="single-add" data-group="single_add">
+        <h2>Audio Samples of Add Editing Tasks</h2>
+        <p class="section-note">Single-turn tasks that add a target sound event while preserving the source scene.</p>
+        <div class="sample-table"></div>
+      </section>
+
+      <section id="single-remove" data-group="single_remove">
+        <h2>Audio Samples of Remove Editing Tasks</h2>
+        <p class="section-note">Single-turn tasks that remove a specified sound event while preserving the remaining audio.</p>
+        <div class="sample-table"></div>
+      </section>
+
+      <section id="single-replace" data-group="single_replace">
+        <h2>Audio Samples of Replace Editing Tasks</h2>
+        <p class="section-note">Single-turn tasks that replace one sound event with another while keeping the acoustic scene stable.</p>
+        <div class="sample-table"></div>
+      </section>
+
+      <section id="multiturn" data-group="multiturn">
+        <h2>Audio Samples of Multi-turn Editing Tasks</h2>
+        <p class="section-note">Composite edits with multiple instruction steps and a final target scene.</p>
+        <div class="sample-table"></div>
+      </section>
+    </main>
+
+    <footer class="wrap footer">
+      <p>Anonymous research demonstration for academic purposes.</p>
+    </footer>
+
+    <script src="demo.js"></script>
+  </body>
+</html>
