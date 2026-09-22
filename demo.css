@@ -119,14 +119,13 @@ h1 {
   color: var(--accent);
 }
 
-.paper-link[disabled],
+.paper-link.inert,
 .tabs button {
   font: inherit;
 }
 
-.paper-link[disabled] {
-  cursor: not-allowed;
-  opacity: 0.92;
+.paper-link.inert {
+  cursor: default;
 }
 
 .tabs button {
@@ -136,7 +135,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.paper-link:not([disabled]):hover,
+.paper-link:not(.inert):hover,
 .tabs button:hover,
 .tabs button.active {
   border-color: var(--accent-strong);
