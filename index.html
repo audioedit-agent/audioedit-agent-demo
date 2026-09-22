@@ -32,16 +32,21 @@
       <section class="abstract">
         <h2>Abstract</h2>
         <p>
-          Existing audio editing methods provide different capabilities for operations such as audio addition,
-          removal and replacement, making a single editor insufficient for diverse and complex instructions. In
-          this paper, we propose AUDIOEDIT-AGENT, a collaborative multi-agent framework for instruction-guided
-          audio editing. AUDIOEDIT-AGENT decomposes a complex instruction into a sequence of editing operations
-          and selects an appropriate audio editing model for each operation. Instead of directly returning a
-          single model output, the framework generates multiple candidate audios and employs an audio critic to
-          evaluate the editing results. When an attempt does not satisfy the editing requirements, the critic
-          feedback is used to refine the prompt, model selection, or inference parameters for the next attempt.
-          This process coordinates different audio editing models within a unified framework and supports both
-          single-step and compound audio editing.
+          Audio editing aims to make targeted modifications to an audio recording while preserving content that
+          should remain unchanged, making it an important task in audio processing and a wide range of applications.
+          Existing audio editing methods support operations such as audio addition, removal, and replacement, but
+          these capabilities are typically provided by separate editors, making a single editor insufficient for
+          handling complex and diverse instructions. To address complex and compound editing instructions, we
+          propose AUDIOEDIT-AGENT, a collaborative multi-agent framework for instruction-guided audio editing. The
+          framework decomposes complex instructions into an ordered sequence of editing operations and dynamically
+          routes each operation to a suitable editor from a heterogeneous model pool. Rather than relying on a single
+          output, it generates multiple audio candidates and employs an AudioCritic to evaluate them and provide
+          diagnostic feedback. Unsuccessful attempts are iteratively refined by adjusting the editing condition,
+          editor selection, or inference configuration. By integrating operation-wise routing, sequential execution,
+          and feedback-driven refinement, AUDIOEDIT-AGENT supports both single-turn and multi-turn audio editing.
+          Experiments demonstrate strong overall performance across objective and subjective evaluations, with
+          particularly clear gains in subjective evaluation and multi-turn editing, while revealing trade-offs on
+          several source-preservation metrics.
         </p>
       </section>
 
